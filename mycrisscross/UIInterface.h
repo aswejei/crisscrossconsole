@@ -28,7 +28,7 @@ class UIInterface
 				std::cout << "Input is incorrect, please try again" << std::endl;
 				std::getline(std::cin, c);
 			}
-			bool playerid;
+			bool playerid=false;
 			if (c == "X") {
 				playerid = false;
 			}
@@ -55,10 +55,32 @@ class UIInterface
 				std::getline(std::cin, s);
 			}
 			int fieldnumber=std::stoi(s);
+			bool mcc = game1.CheckMovePossibility(fieldnumber);
+		/*	game1.GetMove(fieldnumber, playerid);*/
+			while (!mcc) 
+			{
+				std::cout << "It's impossible to make move to the chosen field, please try again" << std::endl;
+				std::cout << "Choose field number to make move as ";
+				if (playerid)
+				{
+					std::cout << "0" << std::endl;
+				}
+				else
+				{
+					std::cout << "X" << std::endl;
+				}
+				std::getline(std::cin, s);
+				while (InputChecker::MoveChecker(s) != true)
+				{
+					std::cout << "Input is incorrect, please try again" << std::endl;
+					std::getline(std::cin, s);
+				}
+				fieldnumber = std::stoi(s);
+				mcc = game1.CheckMovePossibility(fieldnumber);
+			}
 			game1.GetMove(fieldnumber, playerid);
 			ui1.setGameField3(playerid, fieldnumber);
 			ui1.ShowCurrentField();
-			
 			char st = checker1.CheckFieldState(fieldnumber, playerid);
 			playerid = !playerid;
 			do 
@@ -78,7 +100,31 @@ class UIInterface
 					std::cout << "Input is incorrect, please try again" << std::endl;
 					std::getline(std::cin, s);
 				}
-				int fieldnumber = std::stoi(s);
+				fieldnumber = std::stoi(s);
+				bool mcc=game1.CheckMovePossibility(fieldnumber);
+				/*	game1.GetMove(fieldnumber, playerid);*/
+				while (!mcc)
+				{
+					std::cout << "It's impossible to make move to the chosen field, please try again" << std::endl;
+					std::cout << "Choose field number to make move as ";
+					if (playerid)
+					{
+						std::cout << "0" << std::endl;
+					}
+					else
+					{
+						std::cout << "X" << std::endl;
+					}
+					std::getline(std::cin, s);
+					while (InputChecker::MoveChecker(s) != true)
+					{
+						std::cout << "Input is incorrect, please try again" << std::endl;
+						std::getline(std::cin, s);
+					}
+					fieldnumber = std::stoi(s);
+					/*mcc = game1.CheckMovePossibility(fieldnumber);*/
+					mcc=game1.CheckMovePossibility(fieldnumber);
+				}
 				game1.GetMove(fieldnumber, playerid);
 				ui1.setGameField3(playerid, fieldnumber);
 				ui1.ShowCurrentField();

@@ -1,16 +1,1 @@
-﻿  InputChecker.cpp
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\InputChecker.h(17,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\InputChecker.h(30,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\InputChecker.h(43,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\InputChecker.h(56,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  mycrisscross.cpp
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(17,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(30,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(43,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(56,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  UIInterface.cpp
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(17,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(30,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(43,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(56,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Создание кода...
+﻿

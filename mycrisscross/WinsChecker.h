@@ -23,7 +23,7 @@ class WinsChecker
 			{
 				CombinationsField[0][k]++;
 			}
-			if (fieldnumber % 2 == 0 && fieldnumber%4!=0)
+			if ((fieldnumber % 2 == 0 && fieldnumber%4!=0)||(fieldnumber==4))
 			{
 				CombinationsField[1][k]++;
 			}
@@ -62,8 +62,8 @@ class WinsChecker
 				for(int j=0; j<=1; j++)
 				if (CombinationsField[i][j] == 3) 
 				{
-					if (j = 0) { fieldstate = '0'; }
-					else { fieldstate = 'X'; }
+					if (j == 0) { fieldstate = 'X'; }
+					else { fieldstate = '0'; }
 				}
 			}
 			if (MoveCounter == 9 &&fieldstate!='X'&&fieldstate!='0') 

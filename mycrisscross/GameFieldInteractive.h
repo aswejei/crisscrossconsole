@@ -12,33 +12,38 @@ class GameFieldInteractive
 		//массив на 8 строк и 2 столбца, 1 столбец - число крестиков, 2 столбец - число ноликов, 1 строка - главная диагональ, 2 строка - побочная диагональ
 		//3-5 строки - 1-3 строки поля(снизу вверх), 6-8 строки - 1-3 столбцы поля(слева направо)
 
-		struct fieldid //структура преобразующая номер поля, вводимый польщователем в номер поля в массиве gamefield
+		//struct fieldid //структура преобразующая номер поля, вводимый польщователем в номер поля в массиве gamefield
+		//{
+			/*int field1;
+			int field2;*/
+			
+		int field1;
+		int field2;
+		void fieldid(int fieldnumber)
 		{
-			int field1;
-			int field2;
-			fieldid(int fieldnumber) {
-				this->field1 = fieldnumber/3;
-				this->field2 = fieldnumber%3;
-			}
+				this->field1 = fieldnumber / 3;
+				this->field2 = fieldnumber % 3;	
 		};
-		bool CheckMovePossibility(int fieldnumber)//метод определяющий возможность походить исходя из наличия крестика/нолика в проверяемом поле
-		{
-			fieldid id(fieldnumber);
-			if (gamefield[id.field1][id.field2][0] == false)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
+		//};
+		//bool CheckMovePossibility(int fieldnumber)//метод определяющий возможность походить исходя из наличия крестика/нолика в проверяемом поле
+		//{
+		//	fieldid id(fieldnumber);
+		//	if (gamefield[id.field1][id.field2][0] == false)
+		//	{
+		//		return true;
+		//	}
+		//	else
+		//	{
+		//		return false;
+		//	}
+		//}
 	public:
 		/*bool GetGameField(int fieldnumber) 
 		{
 			fieldid id(fieldnumber);
 			return gamefield[id.field1][id.field2][1];
 		}*/
+
 		GameFieldInteractive() 
 		{
 			//this->MoveCounter = 0;
@@ -53,21 +58,29 @@ class GameFieldInteractive
 				}
 			}
 		}
-		bool GetMove(int fieldnumber, bool playerID) //метод записи хода в поле, в случае невозможности хода возвращает false, в случае успеха - true
+		void GetMove(int fieldnumber, bool playerID) //метод записи хода в поле, в случае невозможности хода возвращает false, в случае успеха - true
 		{
-			if (CheckMovePossibility(fieldnumber)) 
-			{
-				fieldid id(fieldnumber);
-				gamefield[id.field1][id.field2][0] = true;
+			
+				/*fieldid id(fieldnumber);*/
+			    fieldid(fieldnumber);
+				gamefield[field1][field2][0] = true;
 				if (playerID) 
 				{
-					gamefield[id.field1][id.field2][1] = true;
+					gamefield[field1][field2][1] = true;
 				}
 				else 
 				{
-					gamefield[id.field1][id.field2][1] = false;
+					gamefield[field1][field2][1] = false;
 				}
 				//MoveCounter++;
+
+		}
+		bool CheckMovePossibility(int fieldnumber)//метод определяющий возможность походить исходя из наличия крестика/нолика в проверяемом поле
+		{
+			/*fieldid id(fieldnumber);*/
+			fieldid(fieldnumber);
+			if (gamefield[field1][field2][0] == false)
+			{
 				return true;
 			}
 			else
