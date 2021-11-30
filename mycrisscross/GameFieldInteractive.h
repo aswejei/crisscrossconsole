@@ -43,15 +43,19 @@ class GameFieldInteractive
 			fieldid id(fieldnumber);
 			return gamefield[id.field1][id.field2][1];
 		}*/
-
-		GameFieldInteractive() 
+		bool GetGameField(int index)
+		{
+			bool x = gamefield[index/3][index%3][1];
+			return x;
+		}
+			GameFieldInteractive()
 		{
 			//this->MoveCounter = 0;
-			for (int i = 0; i <= 2; i++) 
+			for (int i = 0; i <= 2; i++)
 			{
-				for (int j = 0; j <= 2; j++) 
+				for (int j = 0; j <= 2; j++)
 				{
-					for (int k = 0; k <= 1; k++) 
+					for (int k = 0; k <= 1; k++)
 					{
 						gamefield[i][j][k] = false;
 					}

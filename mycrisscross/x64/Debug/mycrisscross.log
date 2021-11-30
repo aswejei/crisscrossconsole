@@ -1,4 +1,8 @@
-﻿  UIInterface.cpp
+﻿  InputChecker.cpp
+C:\Users\nikit\source\repos\mycrisscross\mycrisscross\InputChecker.h(67,2): warning C4091: static : пропускается слева от "InputChecker", когда ни одна переменная не объявлена
   mycrisscross.cpp
+C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(67,2): warning C4091: static : пропускается слева от "InputChecker", когда ни одна переменная не объявлена
+  UIInterface.cpp
+C:\Users\nikit\source\repos\mycrisscross\mycrisscross\Inputchecker.h(67,2): warning C4091: static : пропускается слева от "InputChecker", когда ни одна переменная не объявлена
   Создание кода...
   mycrisscross.vcxproj -> C:\Users\nikit\source\repos\mycrisscross\x64\Debug\mycrisscross.exe

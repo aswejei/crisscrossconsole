@@ -6,6 +6,9 @@ class GameFieldUI
 		char fieldids[9] = { '0','1','2','3','4','5','6','7', '8' };
 		char emptyfield[9] = { '-', '-', '-', '-', '-', '-', '-', '-', '-'};
 	public:
+		char GetGameField(size_t index) {
+			return emptyfield[index];
+		}
 		void setGameField3(bool playerid, size_t index) {
 			if (playerid) {
 				emptyfield[index] = '0';

@@ -1,19 +1,13 @@
 #pragma once
-#include <iostream>
-class InputChecker
+ class InputChecker
 {
-	private:
-
-		static inline std::string Cross = "X";
-		static inline std::string Zero = "0";
-		static inline std::string Start="start";
-		/*static inline std::string GameQuit = "quit";*/
-
 	public:
 		InputChecker() {
 		}
 		static bool CrissCrossChecker(std::string crisscross) 
 		{
+			std::string Cross = "X";
+			std::string Zero = "0";
 			/*char* crcr= new char[crisscross.length() + 1];
 			strcpy(crcr, crisscross.c_str());*/
 			if (crisscross==Cross||crisscross==Zero)
@@ -40,6 +34,7 @@ class InputChecker
 		}
 		static bool Startchecker(std::string start1) 
 		{
+			std::string Start = "start";
 			/*char* start = new char[start1.length() + 1];
 			strcpy(start, start1.c_str());*/
 			if (/*start[0] == Start && start[1] == '\0' && std::strlen(start)==2*/start1==Start) 

@@ -16,6 +16,8 @@ class WinsChecker
 																		//6 7 8
 																		//3 4 5
 																		//0 1 2
+		
+		
 		void FillFieldState(int fieldnumber, bool playerid) //добавляет в массив с числом ходов новый ход
 		{
 			int k = playerid;
